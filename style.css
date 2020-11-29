@@ -1,0 +1,433 @@
+/*import fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap');
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:#0edfbf;
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto",sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+    
+.text-color{
+    color:var(--text-color);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.lightblue{
+    color: lightblue;
+}
+
+/*header */
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header.site-title{
+    font-family: var(--gugi);
+}
+
+
+.container.dropdown-toggle,
+.container.dropdown-item{
+    font-size: 0.7em;
+}
+
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Menu**/
+
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+.navbar-nav .nav-link{
+    font-size: 00.9em;
+    color: var(--light-gray)!important;
+
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem!important;
+}
+
+/*Slider one*/
+
+.site-slider{
+    position: relative;
+}
+
+.position-top{
+    position: absolute;
+    top: 45%
+}
+
+.site-slider .slider-btn.prev,
+.site-slider .slider-btn.prev {
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    color: white;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn.prev,
+.site-slider:hover .slider-btn.next{
+    opacity: 1;
+}
+
+.right-0{
+    right: 0;
+}
+
+.slick-dots li{
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: block;
+    width: 5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: white;
+    text-indent: 99999px;
+    border-radius: 100%;
+}
+
+
+.slick-dots li.slick-active button{
+    transform: scale(2.5);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
+}
+
+
+/* Second Slider*/
+
+.site-slider-two{
+   position: relative;
+   height: 30%; 
+}
+.site-slider-two .product{
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-two .product img{
+    width: 90%;
+    margin: auto;
+}
+
+.site-btn.btn-span{
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid var(--border);
+    background-color: rgb(139, 3, 3);
+    color: var(--light-gray);
+}
+
+.slider-two .slick-track .product:hover span{
+    background-color: var(--primary-color);
+}
+.content{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(104, 114, 108, 0.884);
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: rgb(204, 17, 17);
+}
+.footer p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+/*image slider*/
+.window {
+    width: 450px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.image-container {
+    width: 2250px;
+    height: 290px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slide {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.button-container {
+    top: -20px;
+    position: relative;
+}
+.slider-button {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb(24, 8, 112);
+}
+#slide-1:target ~ .image-container {
+    left: 0;
+}
+#slide-2:target ~ .image-container {
+    left: -450px;
+}
+#slide-3:target ~ .image-container {
+    left: -900px;
+}
+#slide-4:target ~ .image-container {
+    left: -1350px;
+}
+#slide-5:target ~ .image-container {
+    left: -1800px;
+}
+
+
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* https://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+    html,body,div,span,applet,object,iframe,
+    h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+    a,abbr,acronym,address,big,cite,code,
+    del,dfn,em,img,ins,kbd,q,s,samp,
+    small,strike,strong,sub,sup,tt,var,
+    b,u,i,center,
+    dl,dt,dd,ol,ul,li,
+    fieldset,form,label,legend,
+    table,caption,tbody,tfoot,thead,tr,th,td,
+    article,aside,canvas,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section,summary,
+    time,mark,audio,video{
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        font:inherit;
+        vertical-align:baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section{
+        display:block;
+    }
+    body{
+        line-height:1;
+    }
+    ol,ul{
+        list-style:none;
+    }
+    blockquote,q{
+        quotes:none;
+    }
+    blockquote:before,blockquote:after,
+    q:before,q:after{
+        content:’’;
+        content:none;
+    }
+    /* remember to define visible focus styles! 
+    :focus{
+        outline:?????;
+    } */
+    
+    /* remember to highlight inserts somehow! */
+    ins{
+        text-decoration:none;
+    }
+    del{
+        text-decoration:line-through;
+    }
+    
+    table{
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+    
+    /*------------------------------------*\
+        $MAIN
+    \*------------------------------------*/
+    
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+    
+    body {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1240px;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f6f6f6;
+    }
+    
+    /* Typography */
+    
+    h1 {
+        font-size: 28px;
+        font-weight: 300;
+        flex: 1;
+    }
+    
+    h5 {
+        font-weight: 500;
+        line-height: 1.7em;
+    }
+    
+    h6 {
+        color: #666;
+        font-size: 14px;
+    }
+    
+    /* Product Layout */
+    
+    .product-filter {
+        display: flex;
+        padding: 30px 0;
+    }
+    
+    .sort {
+        display: flex;
+        align-self: flex-end;
+    }
+    
+    .collection-sort {
+     display: flex;
+        flex-direction: column;
+    }
+    
+    .collection-sort:first-child {
+        padding-right: 20px;
+    }
+    
+    label {
+        color: #666;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
+    
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 2%;
+        flex: 1 16%;
+        
+        background-color: #FFF;
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+    }
+    
+    .product-image img {
+        width: 100%;
+    }
+    
+    .product-info {
+        margin-top: auto;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    @media ( max-width: 920px ) {
+        
+        .product-card {
+            flex: 1 21%;
+        }
+        
+        .products .product-card:first-child, 
+        .products .product-card:nth-child(2) {
+            flex: 2 46%;
+        }
+        
+    }
+    
+    @media ( max-width: 600px ) {
+        
+        .product-card {
+            flex: 1 46%;
+        }
+        
+    }
+    
+    @media ( max-width: 480px ) {
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .product-filter {
+            flex-direction: column;
+        }
+        
+        .sort {
+            align-self: flex-start;
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
